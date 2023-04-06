@@ -1,0 +1,238 @@
+/* This is just a temp file i use as a draft */
+
+/*
+import "./beers.css";
+import Card from "../../components/Ui/Card";
+import { Link, Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import ReactPaginate from "react-paginate";
+import BeerItem from "../../components/content/beers/BeerItem";
+import img4 from "../../assets/img4.jpg";
+import breweryImage from "../../assets/brewery.jpg";
+import Filter from "../../components/Ui/Filter";
+import { useNavigate, useLocation } from "react-router-dom";
+
+const filterList = (array, filterOption) => {
+  switch (filterOption) {
+    case "old-first":
+      return array;
+      break;
+    case "new-first":
+      return array.reverse();
+      break;
+    case "high-comments":
+      return array.sort(function (a, b) {
+        return b.beerComments - a.beerComments;
+      });
+      break;
+    case "low-comments":
+      return array.sort(function (a, b) {
+        return a.beerComments - b.beerComments;
+      });
+      break;
+    case "top-ratings":
+      return array.sort(function (a, b) {
+        return b.beerRating - a.beerRating;
+      });
+      break;
+    case "low-ratings":
+      return array.sort(function (a, b) {
+        return a.beerRating - b.beerRating;
+      });
+      break;
+    default:
+      return array;
+  }
+};
+
+const BEERS_FILTER_OPTIONS = [
+  { id: 1, optionName: "Old first", option: "old-first" },
+  { id: 2, optionName: "New first", option: "new-first" },
+  { id: 3, optionName: "higher number of comments", option: "high-comments" },
+  { id: 4, optionName: "smaller number of comments", option: "low-comments" },
+  { id: 5, optionName: "alcohol level", option: "alcohol-high" },
+  { id: 6, optionName: "Higher Rating", option: "top-ratings" },
+  { id: 7, optionName: "Lower Rating", option: "low-ratings" },
+];
+const DummyBeers = [
+  {
+    id: 1,
+    beerName: "name",
+    beerRating: 4,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "8",
+    breweryId: 1,
+    beerImg: img4,
+  },
+  {
+    id: 2,
+    beerName: "name",
+    beerRating: 3.5,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "10",
+    breweryId: 6,
+    beerImg: breweryImage,
+  },
+  {
+    id: 3,
+    beerName: "name",
+    beerRating: 4,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "8",
+    breweryId: 1,
+    beerImg: img4,
+  },
+  {
+    id: 4,
+    beerName: "name",
+    beerRating: 0,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "2",
+    breweryId: 2,
+    beerImg: breweryImage,
+  },
+  {
+    id: 5,
+    beerName: "name",
+    beerRating: 3,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "3",
+    breweryId: 4,
+    beerImg: breweryImage,
+  },
+  {
+    id: 6,
+    beerName: "name",
+    beerRating: 4.5,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "3",
+    breweryId: 1,
+    beerImg: breweryImage,
+  },
+  {
+    id: 7,
+    beerName: "name",
+    beerRating: 4,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "8",
+    breweryId: 1,
+    beerImg: img4,
+  },
+  {
+    id: 8,
+    beerName: "name",
+    beerRating: 5,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "2",
+    breweryId: 8,
+    beerImg: img4,
+  },
+  {
+    id: 9,
+    beerName: "name",
+    beerRating: 1,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "6",
+    breweryId: 9,
+    beerImg: img4,
+  },
+  {
+    id: 10,
+    beerName: "name",
+    beerRating: 5,
+    beerInfo:
+      "this beer is awsom men you should try it this beer is awsom men you should try itthis beer is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should is awsom men you should try itthis beer is awsom men you should",
+    beerComments: "12",
+    breweryId: 10,
+    beerImg: breweryImage,
+  },
+];
+const ITEM_PER_PAGE = 6;
+
+const Beers = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const [data, setData] = useState(DummyBeers);
+
+  const pageCount = Math.ceil(data.length / ITEM_PER_PAGE);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const filtredList = (optionId) => {
+    navigate(
+      location.pathname + "?sort=" + BEERS_FILTER_OPTIONS[optionId].option
+    );
+    setData(filterList(DummyBeers, queryParams.get("sort")));
+  };
+
+  const handlePageClick = (event) => {
+    const num = event.selected;
+    setCurrentPage(num);
+  };
+  const offset = currentPage * ITEM_PER_PAGE;
+
+  const currentPageData = data
+    .slice(offset, offset + ITEM_PER_PAGE)
+    .map((e, i) => {
+      return (
+        <Link to={`beer${e.id}`}>
+          <BeerItem
+            key={i}
+            id={e.id}
+            comments={e.beerComments}
+            rating={e.beerRating}
+            image={e.beerImg}
+            brewery={e.breweryId}
+            name={e.beerName}
+            info={e.beerInfo}
+          />
+        </Link>
+      );
+    });
+
+  return (
+    <section className="beers">
+      <div className="beers__itro">
+        <h2>Welcome to our Beers page</h2>
+        <p>
+          We made sur you are having a great experience in your beer finding
+          journey
+        </p>
+      </div>
+      <div className="filter-beers">
+        <p>Sort beers by: </p>
+        <div class="select" tabindex="1">
+          <Filter options={BEERS_FILTER_OPTIONS} onFilterChange={filtredList} />
+        </div>
+      </div>
+      <div className="items">{currentPageData}</div>
+      <ReactPaginate
+        previousLabel={"<=previous"}
+        nextLabel={"next=>"}
+        pageCount={pageCount}
+        onPageChange={handlePageClick}
+        containerClassName="pagination"
+        pageClassName="page-item"
+        pageLinkClassName="page-link"
+        previousClassName="page-item"
+        previousLinkClassName="page-link"
+        nextClassName="page-item"
+        nextLinkClassName="page-link"
+        activeClassName="active"
+      />
+    </section>
+  );
+};
+
+export default Beers;
+
+*/

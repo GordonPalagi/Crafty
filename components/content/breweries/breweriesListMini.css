@@ -1,0 +1,15 @@
+.brewery-mini {
+  border: 1px solid rgba(245, 222, 179, 0.096);
+  padding: 1rem;
+  display: flex;
+  cursor: pointer;
+}
+.brewery-mini img {
+  width: 10rem;
+  height: auto;
+}
+.brew-details {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}

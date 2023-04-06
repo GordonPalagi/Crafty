@@ -1,0 +1,33 @@
+.add-brewery-form {
+  border: 2px solid wheat;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.add-brewery-form label {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.add-brewery-form input {
+  padding: 1rem;
+  width: 50%;
+}
+.add-brewery-form textarea {
+  width: 48rem;
+  height: 20rem;
+}
+.add-brewery-form input[type="checkbox"] {
+  width: 3rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+.add-brewery-form input[type="file"] {
+  background-color: rgba(51, 45, 18, 0.753);
+}
+.add-brewery-form button {
+  color: blanchedalmond;
+  padding: 1rem;
+  background-color: rgb(182, 147, 72);
+  cursor: pointer;
+}

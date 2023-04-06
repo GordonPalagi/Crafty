@@ -1,0 +1,170 @@
+/* @import url('https://fonts.googleapis.com/css?family=Nunito'); */
+
+/* header {
+  background-color: #0e1013;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Nunito", serif;
+  text-decoration: none;
+} */
+/* header h1 {
+  color: #dfbc8d;
+} */
+
+/* nav {
+  margin-left: 20%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-left: 3rem;
+  cursor: pointer;
+}
+nav ul a,
+ul {
+  color: #dfbc8d;
+  text-decoration: none;
+}
+
+.header-buttons {
+  display: flex;
+} */
+/* .header-buttons button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 1.5px solid #b19f87;
+  color: #dfbc8d;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 2.5px;
+  padding: 1rem;
+  margin-left: 1rem;
+} */
+/* .header-buttons button:hover {
+  background-color: #b19f87;
+  border: 2.5px solid #b19f87;
+  text-decoration-color:#dfbc8d;
+} */
+
+.page {
+  height: 150vh;
+  width: 100%;
+  overflow:auto;
+}
+
+.journal-con {
+  text-align: center;
+  
+}
+
+.vertical-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verticalBar {
+  display: inline-block;
+  height: 125px;
+  width: 3px;
+  background-color: whitesmoke;
+  position: relative;
+  top: 310px;
+  filter: blur(5px);
+}
+
+.verticalBar-2 {
+  display: inline-block;
+  height: 125px;
+  width: 3px;
+  background-color: whitesmoke;
+  position: relative;
+  top: 465px;
+  right: 2px;
+  filter: blur(5px);
+}
+
+.horizantal-con {
+  display: flex;
+  justify-content: center;
+}
+
+.horizantalBar {
+  height: 3px;
+  width: 125px;
+  background-color: whitesmoke;
+  filter: blur(5px);
+  position: relative;
+  top: 322px;
+  right: 15px;
+}
+.horizantalBar-2 {
+  height: 3px;
+  width: 125px;
+  background-color: whitesmoke;
+  filter: blur(5px);
+  position: relative;
+  top: 322px;
+  left: 15px;
+}
+
+
+
+.tbd {
+  position: relative;
+  top: 100px;
+  right: 100px;
+}
+
+.text-area {
+  height: 15em;
+  width: 20em;
+  background-color: #b19f87;
+  border-radius: 1em;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  font-weight: 800;
+  font-size: large;
+}
+
+.additional-notes {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: -2em;
+  left: 14em;
+}
+
+
+.tastingBar {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  left: 50px;
+  top: 18em;
+}
+
+.final-rating-con {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  right: 16em;
+}
+
+.colorPicker {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  display: inline-flex;
+  right: 6em;
+  bottom: 2em;
+  transform: scale(1.1);
+}

@@ -1,0 +1,65 @@
+.brewery-edit {
+  padding: 0 2rem;
+  position: sticky;
+
+  top: 0;
+}
+.brewery-edit a {
+  cursor: pointer;
+}
+.brewery-edit a:hover {
+  cursor: pointer;
+  color: #ff5e00;
+}
+.brewery-edit img {
+  width: 100%;
+  max-height: 40vh;
+}
+.brewery-edit h3,
+h4 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.brewery-edit p {
+  color: antiquewhite;
+}
+.edit-button {
+  color: #ff5e00;
+  padding-left: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.edit-button-icon {
+}
+.edit-button-span {
+}
+.edit-button:hover {
+  color: rgb(129, 95, 1);
+  transform: scale(120%);
+}
+.brewery-editin-image {
+  position: relative;
+  max-width: 30vw;
+  max-height: 50vh;
+}
+.brewery-editin-image > *:not(:first-child) {
+  position: absolute;
+  transform: scale(150%);
+  bottom: 1rem;
+  right: 1.5rem;
+}
+.brewery-actions-buttons {
+  padding-top: 2rem;
+}
+.brewery-actions-buttons button {
+  background-color: #665036;
+  color: #e7a883;
+}
+.brewery-actions-buttons button:hover {
+  background-color: #5c4120;
+  color: #bb896c;
+}

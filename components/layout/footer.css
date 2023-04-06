@@ -1,0 +1,26 @@
+footer {
+  background-color: #1d2127;
+
+  padding: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #dfbc8d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p:last-child {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+footer p:last-child:hover {
+  color: white;
+  transform: scale(110%);
+}
+footer p:last-child span:first-child {
+  font-size: 2rem;
+}

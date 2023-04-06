@@ -1,0 +1,73 @@
+.user-list {
+  height: 27vh;
+  width: 20vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+.user-list p {
+  padding: 0.6rem 0;
+  padding-left: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete-user-from-list:first-child {
+  align-items: center;
+  display: flex;
+  padding-right: 3rem;
+  font-size: 2.2rem;
+}
+.delete-user-from-list {
+  padding: 0 1rem;
+}
+.delete-user-from-list:hover {
+  color: red;
+}
+.user-span {
+  display: inline-flex;
+}
+.user-span span:first-child {
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.user-list p:hover {
+  background-color: rgba(255, 228, 196, 0.479);
+  font-size: 1.8rem;
+}
+/* width */
+.user-list::-webkit-scrollbar {
+  width: 3rem;
+}
+
+/* Track */
+.user-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 1rem;
+}
+
+/* Handle */
+.user-list::-webkit-scrollbar-thumb {
+  background: rgba(78, 33, 3, 0.925);
+  border-radius: 1rem;
+}
+
+.list-of-users p {
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #623906;
+}
+.list-of-users p:hover {
+  color: #462c0d;
+  background-color: rgba(85, 70, 51, 0.226);
+}
+.list-of-users span:first-child {
+  padding-right: 1rem;
+}

@@ -1,0 +1,42 @@
+.brewery-management {
+  display: flex;
+  row-gap: 2rem;
+}
+
+.brewery-left-management {
+  width: 45%;
+  margin-right: 2rem;
+}
+
+.brewery-right-management {
+  border: 1px solid rgba(245, 222, 179, 0.219);
+  width: 55%;
+}
+.brewery-left-management > *:not(:first-child) {
+  transition: all 0.1s ease-out;
+}
+.brewery-left-management > *:not(:first-child):hover {
+  transform: scale(105%);
+  border: 1px solid rgba(245, 222, 179, 0.76);
+  box-shadow: 1px 1px 1px wheat;
+}
+
+.brewery-types-buttons-unClicked {
+  color: rgb(223, 215, 205);
+  background-color: rgb(75, 73, 70);
+  padding: 0.5rem !important;
+  border-radius: 3px;
+}
+.brewery-types-buttons-clicked {
+  color: rgb(223, 215, 205);
+  background-color: rgb(41, 36, 30);
+  padding: 0.5rem !important;
+  border-radius: 3px;
+}
+.brewery-types-buttons button {
+  padding: 0.5rem !important;
+  border-radius: 3px;
+}
+.brewery-types-buttons button > * {
+  padding-right: 0.5rem;
+}

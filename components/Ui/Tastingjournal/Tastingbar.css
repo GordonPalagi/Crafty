@@ -1,0 +1,65 @@
+.text {
+    display: flex;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-size: 1.1em;
+}
+.textflex {
+    display: inline-flex;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 0px;
+    padding-top: 7px;
+}
+.bottomBox {
+    /* border-radius: 0px 0px 10px 10px; */
+}
+.topBox {
+    /* border-radius: 10px 10px 0px 0px; */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0px 20px;
+    
+  }
+  /* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  /* Create a custom checkbox */
+.checkmark {
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+}
+  /* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #b19f87;
+}
+  /* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #b19f87;
+}
+
+.checked {
+    background-color: #b19f87;
+  }
+  

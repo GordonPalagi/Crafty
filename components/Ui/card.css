@@ -1,0 +1,18 @@
+.card {
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 1.5rem;
+  border: 3px solid #b19f87;
+  cursor: pointer;
+  border: 2px solid rgb(187, 138, 4);
+  border-radius: 5px;
+}
+
+.card:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgb(187, 138, 4);
+  /* transform: translateY(-5%);*/
+  transform: scale(1.02);
+  border: 3px solid rgb(217, 160, 3);
+  z-index: 50;
+}

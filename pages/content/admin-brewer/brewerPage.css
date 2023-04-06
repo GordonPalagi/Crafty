@@ -1,0 +1,18 @@
+.brewery-admin button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.brewery-into {
+  padding-bottom: 2rem;
+}
+.unclicked {
+  background-color: aliceblue;
+}
+.clicked {
+  background-color: rgb(105, 78, 43);
+  color: antiquewhite;
+}

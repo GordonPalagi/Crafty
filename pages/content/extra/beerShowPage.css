@@ -1,0 +1,28 @@
+.beer-show-page {
+}
+.beer-show-page_h2 {
+}
+.beer-show-page_image {
+  width: 40vw;
+}
+.beer-show-page__details {
+}
+
+.brewery-from-beer img {
+  width: 15vw;
+}
+.beer-show-top {
+  display: flex;
+}
+.beer-show-right {
+  padding-left: 10vw;
+}
+.beer-show-page__details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.show-beer-page-rating {
+  font-size: 3rem;
+}

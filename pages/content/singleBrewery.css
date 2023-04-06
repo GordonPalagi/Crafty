@@ -1,0 +1,58 @@
+.brewery-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brew {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.info-left {
+  width: 65%;
+  max-height: 80vh;
+}
+.info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 30%;
+}
+.info-right h5 {
+  background-color: #958d82;
+  padding: 1rem;
+  border-radius: 11px;
+  border: 2px solid #cfbb9f;
+}
+.info-left img {
+  height: 100%;
+  width: 100%;
+}
+.info-right p {
+  text-shadow: 0px 0px 11px #bdabab;
+}
+.details button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.unclicked {
+  background-color: aliceblue;
+}
+.clicked {
+  background-color: rgb(105, 78, 43);
+  color: antiquewhite;
+}

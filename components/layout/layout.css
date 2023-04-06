@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+#layout {
+  border-right: 2px solid #1f1a1a;
+  border-left: 2px solid #1f1a1a;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+}
+
+main {
+  height: auto;
+  background-color: #0e1216;
+  opacity: 0.95;
+  grid-area: main;
+  min-height: 84vh;
+  padding: 2rem 3rem;
+  color: rgb(230, 173, 99);
+  font-size: 1.8rem;
+  word-break: break-all;
+  font-family: "Nunito", serif;
+}
+
+#layout footer {
+  opacity: 1;
+  grid-area: footer;
+}
+#layout header {
+  grid-area: header;
+  opacity: 1;
+}

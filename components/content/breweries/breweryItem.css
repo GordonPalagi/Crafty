@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+.brewery {
+  display: flex;
+  flex-direction: column;
+  width: 21rem;
+  height: 28rem;
+  font-family: "Nunito", serif;
+  align-items: center;
+  justify-content: space-between;
+}
+.info h5 {
+  color: antiquewhite;
+}
+.info p {
+  color: white;
+  font-size: 1.4rem;
+}
+.brewery img {
+  width: 17rem;
+  height: 15rem;
+  border-radius: 15%;
+}
+
+.btn {
+  display: flex;
+  /* align-content: center; */
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  text-decoration-color: aliceblue;
+  width: 19rem;
+}
+.btn button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  font-size: 1rem;
+  text-decoration-color: aliceblue;
+  font-weight: bold;
+  background-color: aliceblue;
+  cursor: pointer;
+  font-family: "Nunito", serif;
+  transition: all 0.1s ease-out;
+}
+.btn button span {
+  margin-right: 0.3rem;
+  margin-top: 0.1rem;
+  font-family: "Nunito", serif;
+}
+.btn button:hover {
+  background-color: #95806b;
+  transform: scale(110%);
+  font-weight: 600;
+  font-family: "Nunito", serif;
+}

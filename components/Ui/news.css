@@ -1,0 +1,27 @@
+.read-more {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid wheat;
+  color: rgb(214, 183, 80);
+  background-color: rgb(117, 112, 112);
+  padding: 0.3rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.1s ease-in-out;
+}
+.news-item img {
+  width: 15vw;
+}
+.read-more:hover {
+  transform: scale(105%);
+  background-color: rgb(206, 189, 189);
+  color: rgb(87, 69, 12);
+}
+.new-item p {
+  color: antiquewhite;
+}
+.new-item:not(:last-child) {
+  border-bottom: 2px solid rgba(245, 222, 179, 0.301);
+  padding-bottom: 1rem;
+}

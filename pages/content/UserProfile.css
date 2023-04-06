@@ -1,0 +1,114 @@
+.userProfile {
+    height: 150vh;
+}
+
+.beer-review-con {
+    display: inline-flex;
+    justify-content: flex-start;
+    position: relative;
+    /* left: 30em; */
+    flex-direction: column;
+    text-align:end;
+    height: 90vh;
+    border: 1px solid whitesmoke;
+    padding: 1em 2em;
+    overflow: scroll;
+    border-radius: 5px;
+    direction: ltr;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em;
+}
+
+.review-title-con {
+    position: sticky;
+    top: 0em;
+    z-index: 1;
+    display: inline-flex;
+    align-self: center;
+    padding-bottom: 5px;
+}
+
+.favorited-beers {
+    background-color: black;
+    border: 1px solid whitesmoke;
+    padding: .5em;
+    position: relative;
+    left: 1em;
+    border-radius: 10px;
+    margin-bottom: .3em;
+    align-self: center;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+
+}
+
+.favorited-beers:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 8px 0px whitesmoke;
+    cursor: pointer;
+
+}
+
+.review-title {
+    background-color: black;
+    /* display: inline-flex; */
+    padding: .5em;
+    text-align: center;
+    position: relative;
+    right: 1em;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin-bottom: .3em;
+    align-self: center;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.review-title:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 8px 0px whitesmoke;
+    cursor: pointer;
+}
+
+.events-tab {
+    background-color: black;
+    border: 1px solid whitesmoke;
+    padding: .5em;
+    position: relative;
+    /* left: 1em; */
+    border-radius: 10px;
+    margin-bottom: .3em;
+    align-self: center;
+    transition: .1s ease-in-out;
+}
+
+.events-tab:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 8px 0px whitesmoke;
+    cursor: pointer;
+}
+
+
+.beerList {
+    border-radius: 5px;
+    height: 7em;
+    width: 24em;
+    border: 1px solid whitesmoke;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+
+}
+
+.beerList:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 8px 0px whitesmoke;
+    cursor: pointer;
+}
+
+.beer-review {
+    /* padding: 1px 0px; */
+}
+

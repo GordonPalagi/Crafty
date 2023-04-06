@@ -1,0 +1,167 @@
+.fullpage {
+  height: 170vh;
+}
+
+.beerTitleCard {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+}
+
+.breweryLogo {
+  height: 100px;
+  width: auto;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  border-radius: 20px;
+  border: 2px solid;
+  box-shadow: 0px 0px 10px;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+.breweryLogo:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+.beerPhoto {
+  display: inline-flex;
+  width: auto;
+  height: 90vh;
+  border-radius: 50px;
+  border: 3px solid whitesmoke;
+  box-shadow: 0px 0px 5px 5px;
+  align-self: center;
+}
+
+.history {
+  border: 1px solid whitesmoke;
+  border-radius: 50px;
+  height: 78vh;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 35px;
+  padding: 10px 25px;
+  font-size: 1em;
+}
+
+.beerName-con {
+  display: flex;
+  justify-content: center;
+}
+
+.beerName {
+  padding-top: 15px;
+  font-size: 3em;
+  position: relative;
+  bottom: 120px;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  display: inline-block;
+  text-shadow: 0px 5px 10px rgba(161, 161, 161, 0.65);
+  transition: all 0.2s ease-in-out;
+}
+
+.beerName:hover {
+  font-size: 3.2em;
+  cursor: pointer;
+}
+
+.beerAspects {
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+  padding-top: 15em;
+  padding-bottom: 7em;
+  color: rgb(206, 223, 236);
+  text-shadow: 0px 0px 1em whitesmoke;
+  font-weight: 900;
+}
+
+.flexBeer-con {
+  display: flex;
+}
+
+.vertical-line {
+  height: 100px;
+  width: 3px;
+  border-left: 3px solid rgba(186, 186, 186, 0.533);
+  filter: blur(3px);
+  position: relative;
+  left: 250px;
+  top: 50px;
+}
+
+.left {
+  position: relative;
+  top: -85px;
+  left: 195px;
+}
+.mid {
+  position: relative;
+  left: 210px;
+}
+
+.right {
+  position: relative;
+  left: 220px;
+}
+
+.tastingJournal {
+  height: 50px;
+  width: 130px;
+  background-color: rgba(0, 0, 0, 0.391);
+  position: relative;
+  border-radius: 10px;
+  bottom: 3em;
+  right: -.5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.449);
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.tastingJournal:hover {
+  transform: scale(1.1);
+}
+
+.brewery-name-stat {
+  position: relative;
+  top: 1em;
+  right: .5em;
+}
+
+.sub-alc-content {
+  position: relative;
+  text-align: center;
+  bottom: 2em;
+}
+
+.starRating {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  transform: scale(.5);
+  top: 3em;
+  right: 6em;
+}
+
+.overAll {
+  position: relative;
+  bottom: 2.4em;
+}
+
+.aspect-name-con {
+  position: relative;
+  left: 1em;
+}

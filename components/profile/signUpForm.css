@@ -1,0 +1,12 @@
+.signup-login-form input[type="radio"] {
+  width: 2rem;
+  height: 2rem;
+}
+.signup-roles {
+  display: flex;
+  margin: 1rem;
+}
+
+.signup-roles label {
+  margin: 0 1rem;
+}

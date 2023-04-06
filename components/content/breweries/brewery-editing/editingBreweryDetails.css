@@ -1,0 +1,11 @@
+.brewery-details-editing {
+  height: 100%;
+}
+.details-input {
+  display: flex;
+  flex-direction: column;
+}
+.details-input input {
+  width: 60%;
+  padding: 1rem 0;
+}

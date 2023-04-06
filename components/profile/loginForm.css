@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.signup-login-form {
+  background-color: #b7b4b080;
+  display: flex;
+  height: 60vh;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 5px solid #b19f87;
+  border-radius: 15px;
+  color: #dfbc8d;
+}
+.signup-login-form h2 {
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+}
+.signup-login-form input {
+  height: 4rem;
+  margin-bottom: 3rem;
+  width: 50%;
+  border-radius: 7px;
+  background-color: #c3c0bd;
+  outline: none;
+  border: 2px solid #b19f87;
+  font-weight: bold;
+  font-family: "Nunito", serif;
+}
+.signup-login-form input:focus,
+.signup-login-form input:visited {
+  background-color: #ffffff;
+  border: 2px solid #a8a086;
+  font-family: "Nunito", serif;
+}
+.signup-login-form label {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+::placeholder {
+  color: rgb(53, 26, 1);
+}
+.signup-login-form button {
+  padding: 13px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 18%;
+  background-color: #322f2b;
+  border: 2px solid #b19f87;
+  color: #dfbc8d;
+  font-weight: bold;
+  font-family: "Nunito", serif;
+  cursor: pointer;
+}
+.signup-login-form button:hover {
+  background-color: #5f5549;
+  border: 2px solid #b19f87;
+  color: #dfbc8d;
+  font-family: "Nunito", serif;
+}
+.signup-login-form a,
+.signup-login-form a:active,
+.signup-login-form a:visited {
+  text-decoration: none;
+  color: rgb(207, 204, 159);
+}
+.signup-login-form a:hover {
+  color: #322f2b;
+}

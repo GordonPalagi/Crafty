@@ -1,0 +1,7 @@
+.items a {
+  text-decoration: none;
+  color: beige;
+}
+.items {
+  max-width: 100%;
+}
